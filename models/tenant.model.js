@@ -44,6 +44,14 @@ module.exports = (mongoose, uuid) => {
         type: Date,
         default: Date.now,
       },
+      companyName: {
+        type: String,
+        unique: true,
+      },
+      companySlug: {
+        type: String,
+        unique: true,
+      },
     },
     { timestamps: true },
   );
